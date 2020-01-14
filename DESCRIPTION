@@ -7,6 +7,7 @@ License: GPL-3
 Description: DataSHIELD server site base functions.
 Imports:
     RANN,
+    lme4,
     nlme
 AggregateMethods:
     alphaPhiDS,
