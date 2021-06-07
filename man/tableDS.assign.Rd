@@ -5,8 +5,16 @@
 \title{tableDS.assign is the serverside assign function
 called by ds.table}
 \usage{
-tableDS.assign(rvar.transmit, cvar.transmit, stvar.transmit,
-  exclude.transmit, useNA.transmit)
+tableDS.assign(
+  rvar.transmit,
+  cvar.transmit,
+  stvar.transmit,
+  rvar.all.unique.levels.transmit,
+  cvar.all.unique.levels.transmit,
+  stvar.all.unique.levels.transmit,
+  exclude.transmit,
+  useNA.transmit
+)
 }
 \arguments{
 \item{rvar.transmit}{is a character string (in inverted commas) specifiying the
@@ -25,10 +33,19 @@ tables in the output if the call specifies a 3 dimensional table.
 Fully specified by <stvar> argument in {ds.table}.
 For more information see help for {ds.table}}
 
-\item{exclude.transmit}{for information see help on <exclude> argument 
+\item{rvar.all.unique.levels.transmit}{is a character string containing all
+unique level in rvar, across the studies, separated by ','.}
+
+\item{cvar.all.unique.levels.transmit}{is a character string containing all
+unique level in cvar, across the studies, separated by ','.}
+
+\item{stvar.all.unique.levels.transmit}{is a character string containing all
+unique level in stvar, across the studies, separated by ','.}
+
+\item{exclude.transmit}{for information see help on <exclude> argument
 of {ds.table}. Fully specified by <exclude> argument of {ds.table}}
 
-\item{useNA.transmit}{for information see help on <useNA> argument 
+\item{useNA.transmit}{for information see help on <useNA> argument
 of {ds.table}. Fully specified by <useNA> argument of {ds.table}}
 }
 \value{
